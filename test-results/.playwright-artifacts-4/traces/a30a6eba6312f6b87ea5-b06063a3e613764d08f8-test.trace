@@ -1,0 +1,16 @@
+{"version":7,"type":"context-options","origin":"testRunner","browserName":"","options":{},"platform":"win32","wallTime":1748120716610,"monotonicTime":78950.135,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","startTime":78956.934,"class":"Test","method":"step","apiName":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@2","parentId":"hook@1","startTime":78968.109,"class":"Test","method":"step","apiName":"fixture: browser","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@3","parentId":"fixture@2","startTime":78971.5,"class":"Test","method":"step","apiName":"browserType.launch","params":{"handleSIGINT":"false","tracesDir":"C:\\Cursor\\beauty-track-hub-main\\test-results\\.playwright-artifacts-4\\traces","headless":"true","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@3","endTime":79073.023,"annotations":[]}
+{"type":"after","callId":"fixture@2","endTime":79073.394,"annotations":[]}
+{"type":"before","callId":"fixture@4","parentId":"hook@1","startTime":79075.148,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@5","parentId":"fixture@4","startTime":79078.798,"class":"Test","method":"step","apiName":"browser.newContext","params":{"acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36","viewport":"Object","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","recordHar":"undefined","reducedMotion":"undefined","forcedColors":"undefined","contrast":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@5","endTime":79091.002,"annotations":[]}
+{"type":"after","callId":"fixture@4","endTime":79102.313,"annotations":[]}
+{"type":"before","callId":"fixture@6","parentId":"hook@1","startTime":79103.166,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@7","parentId":"fixture@6","startTime":79105.718,"class":"Test","method":"step","apiName":"browserContext.newPage","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@7","endTime":79416.586,"annotations":[]}
+{"type":"after","callId":"fixture@6","endTime":79416.915,"annotations":[]}
+{"type":"after","callId":"hook@1","endTime":79416.988,"annotations":[]}
+{"type":"before","callId":"pw:api@8","startTime":79419.636,"class":"Test","method":"step","apiName":"page.goto","params":{"url":"https://playwright.dev/","waitUntil":"load"},"stack":[{"file":"C:\\Cursor\\beauty-track-hub-main\\beauty\\example.spec.ts","line":4,"column":14}]}

@@ -1,0 +1,159 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 340 100% 99%;
+    --foreground: 340 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 10% 10%;
+
+    --primary: 340 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 340 10% 95%;
+    --muted-foreground: 340 10% 40%;
+
+    --accent: 270 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 10% 90%;
+    --input: 340 10% 90%;
+    --ring: 340 100% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 340 30% 97%;
+    --sidebar-foreground: 340 10% 30%;
+    --sidebar-primary: 340 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 340 10% 95%;
+    --sidebar-accent-foreground: 340 10% 10%;
+    --sidebar-border: 340 10% 90%;
+    --sidebar-ring: 340 100% 60%;
+  }
+
+  /* Teal color theme */
+  [data-color="teal"] {
+    --primary: 180 100% 30%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 180 100% 30%;
+    --sidebar-primary: 180 100% 30%;
+    --sidebar-ring: 180 100% 30%;
+  }
+
+  /* Lavender color theme */
+  [data-color="lavender"] {
+    --primary: 270 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 270 100% 60%;
+    --sidebar-primary: 270 100% 60%;
+    --sidebar-ring: 270 100% 60%;
+  }
+
+  /* Blue color theme */
+  [data-color="blue"] {
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 210 100% 50%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-ring: 210 100% 50%;
+  }
+
+  /* Green color theme */
+  [data-color="green"] {
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 142 72% 29%;
+    --sidebar-primary: 142 72% 29%;
+    --sidebar-ring: 142 72% 29%;
+  }
+
+  /* Purple color theme */
+  [data-color="purple"] {
+    --primary: 280 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 280 100% 50%;
+    --sidebar-primary: 280 100% 50%;
+    --sidebar-ring: 280 100% 50%;
+  }
+
+  .dark {
+    --background: 340 20% 10%;
+    --foreground: 340 10% 95%;
+
+    --card: 340 20% 12%;
+    --card-foreground: 340 10% 95%;
+
+    --popover: 340 20% 12%;
+    --popover-foreground: 340 10% 95%;
+
+    --primary: 340 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 340 20% 20%;
+    --muted-foreground: 340 10% 70%;
+
+    --accent: 270 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 20% 20%;
+    --input: 340 20% 20%;
+    --ring: 340 100% 60%;
+
+    --sidebar-background: 340 20% 12%;
+    --sidebar-foreground: 340 10% 90%;
+    --sidebar-primary: 340 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 340 20% 20%;
+    --sidebar-accent-foreground: 340 10% 95%;
+    --sidebar-border: 340 20% 20%;
+    --sidebar-ring: 340 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .beauty-gradient {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .beauty-gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .teal-lavender-gradient {
+    @apply bg-gradient-to-r from-teal-500 to-lavender-500;
+  }
+}
+

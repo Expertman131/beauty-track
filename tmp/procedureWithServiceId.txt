@@ -1,0 +1,22 @@
+export type ProcedureStatus = 'active' | 'completed' | 'schedule-soon' | 'need-attention';
+
+export interface Procedure {
+  id: string;
+  name: string;
+  client_id: string; 
+  staff_id: string;
+  staff_name?: string | null;
+  // Хранение идентификатора услуги/типа процедуры (обоими способами для совместимости)
+  service_id: string;
+  serviceId: string;
+  date: string;
+  next_date?: string | null;
+  products_used?: string[] | null;
+  notes?: string | null;
+  progress?: number | null;
+  status: ProcedureStatus;
+  color?: string | null;
+  result?: string | null;
+  branch_id?: string | null;
+  created_at?: string;
+} 

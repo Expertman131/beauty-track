@@ -1,0 +1,8 @@
+# Universal SPA redirects
+# For Netlify, Vercel, and other platforms that support _redirects
+
+# API routes (if any)
+/api/* /api/:splat 200
+
+# SPA fallback - должно быть последним
+/* /index.html 200 
