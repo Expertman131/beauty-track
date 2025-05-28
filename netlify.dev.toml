@@ -1,0 +1,29 @@
+# Конфигурация для локальной разработки с Netlify Dev
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "dist"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+  publish = "dist"
+  functions = "netlify/functions"
+  
+  # Переменные окружения для разработки
+  [dev.env]
+    VITE_SUPABASE_URL = "https://gmajzyndavrqvjccojus.supabase.co"
+    VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtYWp6eW5kYXZycXZqY2NvanVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU5MDI2NzQsImV4cCI6MjA1MTQ3ODY3NH0.Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8Qs8"
+    VITE_APP_ENV = "development"
+    NETLIFY_DEV = "true"
+
+# Редиректы для локальной разработки
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
